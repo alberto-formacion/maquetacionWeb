@@ -1,0 +1,14 @@
+/* 
+SELECTORES
+*
+etiqueta: p{}
+clase: .clase{}
+id: #id{}
+
+*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
