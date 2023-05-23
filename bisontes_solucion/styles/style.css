@@ -14,7 +14,32 @@ id: #id{}
 }
 
 nav{
-    float: right;
+    background-color: black;
+}
+
+nav ul{
+    width: 500px;
+    margin: 0 auto;
+}
+
+nav li{
+    list-style: none;
+    float: left;
+    padding: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav li.active{
+    background-color: #00CBF1;
+}
+
+header img{
+    width: 100%;
 }
 
 aside{
@@ -34,18 +59,75 @@ aside li{
     padding: 5px 0;
 }
 
+aside article{
+    margin-bottom: 30px;
+}
+
 section{
     width: 70%;
     float: right;
 }
 
-footer{
+section article{
+    /*margin-left: 20px;
+    margin-bottom: 35px;*/
+    margin: 0 0 35px 20px;
+    border-bottom: 1px dashed grey;
+}
+
+section p{
+    margin-bottom: 15px;
+    clear:both;
+}
+
+section a{
+    text-decoration: none;
+    color: #73E0F5;
+}
+
+section a:visited{
+    color: red;
+}
+
+section a:hover{
+    color: blueviolet;
+}
+
+section a:active{
+    color: green;
+}
+
+section footer{
+    padding-bottom: 20px;
+}
+
+section header{
+    margin-bottom: 40px;
+}
+
+section h2{
+    margin-bottom: 10px;
+}
+
+#pie{
     clear: both;
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid grey;
 }
 
 #container{
     width: 80%;
     margin-left: 10%;
+}
+
+.fecha{
+    float: left;
+}
+
+.autor{
+    float: right;
 }
 
 .clear{
