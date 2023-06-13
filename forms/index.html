@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .oculto{
+            display: none;
+        }
+
+        label{
+            display: block;
+        }
+
+        .labelCheckbox{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="a.html" method="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="20" size="20" placeholder="
+            Nombre">
+        </div>
+
+        <div>
+            <label for="">Sexo</label>
+            <input type="radio" name="sexo" id="chico" value="chico"> Chico
+            <input type="radio" name="sexo" id="chica" value="chica"> Chica
+        </div>
+
+        <div>
+            <label for="">Intereses</label>
+            <input type="checkbox" name="ordenadores" id="ordenadores" value="ordenadores"> 
+            <label class="labelCheckbox" for="ordenadores">Ordenadores</label>
+
+            <input type="checkbox" name="deportes" id="deportes" value="deportes"> 
+            <label class="labelCheckbox" for="deportes">Deportes</label> 
+
+            <input type="checkbox" name="series" id="series" value="series"> 
+            <label class="labelCheckbox" for="series">Series</label> 
+
+            <input type="checkbox" name="cine" id="cine" value="cine"> 
+            <label class="labelCheckbox" for="cine">Cine</label> 
+        </div>
+
+        <div>
+            <label for="colegio">Colegio</label>
+            <select name="colegio" id="colegio">
+                <option value="">Seleccione un colegio</option>
+                <option value="sanluis">San Luis</option>
+                <option value="jesuitas">Jesuitas</option>
+                <option value="paga">Pagasarribide</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="colegio">Colegio</label>
+            <select name="colegio" id="colegio" multiple="multiple">
+                <option value="sanluis">San Luis</option>
+                <option value="jesuitas">Jesuitas</option>
+                <option value="paga">Pagasarribide</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="opinion">Opinion</label>
+            <textarea name="opinion" id="opinion" cols="60" rows="10" maxlength="140"></textarea>
+        </div>
+
+        <button>Enviar</button>
+        <button type="reset">Borrar Formulario</button>
+    </form>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac porta diam, faucibus efficitur ante. Donec vitae quam hendrerit, semper nulla et, efficitur ante. Aliquam pellentesque sit amet nisi sed dictum. Sed hendrerit nibh lacus, quis aliquet nunc ornare id. Mauris maximus magna sed venenatis dapibus. In velit augue, dictum vitae tortor ut, convallis scelerisque orci. Quisque sit amet lectus ipsum. Nullam sit amet ex dui. Ut diam odio, cursus nec tempus a, fermentum at ante. Ut nec dolor in libero ultrices mattis ac eu dolor. Nulla condimentum lacus nec augue aliquam porttitor. Vestibulum lacinia ultricies ex non scelerisque. Praesent vehicula tempus dui, ac accumsan justo convallis et.</p>
+
+    <p id="parrafoOculto" class="oculto">Proin efficitur diam in neque imperdiet, eu porta lectus aliquam. Aliquam laoreet quam vel efficitur vestibulum. Nam vulputate mi id est sollicitudin suscipit. Donec nec fermentum turpis, eu tristique eros. Pellentesque sit amet augue ornare, ultricies dui a, pretium odio. Pellentesque tellus sem, commodo a viverra vehicula, pellentesque in sem. Sed ac arcu leo. Nam diam diam, fringilla at bibendum a, luctus sed eros. Curabitur rhoncus euismod est vel rhoncus. Cras arcu mi, sodales ac tortor at, tempor finibus nibh. Nunc a neque scelerisque libero mollis dapibus ut nec est. Praesent ex est, fringilla id imperdiet vel, placerat eu dolor. Mauris ac consequat libero, a molestie magna. Vestibulum ultricies aliquam euismod. Maecenas nisl sapien, vulputate at elementum non, tempor eget nibh. Cras tristique elit ac velit auctor, eget cursus magna aliquet. </p>
+    <button onclick="mostrarMas()">Mostrar mas info</button>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.5420857431534!2d-2.9395791366577564!3d43.26162694338867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e502873b41fd5%3A0x1ab0ace3022b6ab9!2sCentro%20San%20Luis%20-%20Formaci%C3%B3n%20Profesional%20y%20Bachillerato!5e0!3m2!1ses!2ses!4v1686679510734!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</body>
+<script>
+   function mostrarMas(){
+    document.getElementById("parrafoOculto").style.display = 'block';
+   } 
+</script>
+</html>
