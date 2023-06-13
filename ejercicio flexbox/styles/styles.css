@@ -58,3 +58,43 @@ section.personas{
     display: flex;
     flex-direction: column;
 }
+
+section.personas article{
+    padding: 15px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+section.personas article h2{
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 15px;
+}
+
+section.personas article img{
+    max-width: 150px;
+    border: 5px solid rgba(177, 44, 44, 0.5);
+    border-radius: 50%;
+}
+
+section.personas article .datosPersona{
+    display:flex;
+    flex-direction: row;
+}
+
+section.personas article.imagenIzquierda .datosPersona{
+    flex-direction: row-reverse;
+}
+
+section.personas article p{
+    padding: 15px;
+}
+
+section.personas article h2{
+    text-align: right;
+}
+
+section.personas article.imagenIzquierda h2{
+    text-align: left;
+}
+
